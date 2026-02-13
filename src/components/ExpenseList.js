@@ -19,7 +19,7 @@ const sortedExpenses = [...expenses].sort(
       <h2 className="text-xl font-bold mb-4">Recent Expenses</h2>
 
       <div className="space-y-3">
-        {expenses.map((expense) => (
+        {sortedExpenses.map((expense) => (
           <div
             key={expense.id}
             className="bg-white p-4 rounded-lg shadow"
